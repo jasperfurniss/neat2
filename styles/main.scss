@@ -1,0 +1,92 @@
+/*******************
+     IMPORTS
+*******************/
+@import 'bourbon/bourbon';
+$visual-grid: false;
+@import 'neat/neat';
+
+
+/*******************
+      COLORS
+*******************/
+$celestial-blue: #47a3da;
+$primary-color: $celestial-blue;
+
+
+/*******************
+       FONTS
+*******************/
+$primary-font: 'Poiret One', cursive;
+
+body {
+  font-family: $primary-font;
+  background-color: $primary-color;
+  color: white;
+}
+/*******************
+ RESPONSIVE LAYOUT
+*******************/
+
+$tablet: new-breakpoint(min-width 501px max-width 840px 2);
+$mobile: new-breakpoint(max-width 500px 12);
+
+form {
+  @include outer-container;
+}
+
+.column1,
+.column2,
+.column3,
+{
+  @include span-columns(4);
+  @include media($tablet) {
+    @include span-columns(1);
+    @include omega(2);
+  }
+  @include media($mobile) {
+    @include span-columns(12);
+  }
+}
+
+
+.column3 {
+  @include media($tablet)
+  {
+  @include span-columns(12);
+  }
+}
+
+select,
+input,
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+input,
+textarea {
+  @include appearance(none);
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 10px;
+  color: white;
+  background-color: $primary-color;
+  font-size: 1.25em;
+  font-family: $primary-font;
+  border-bottom: 3px solid white;
+  &:focus {
+    border-bottom: 5px solid black;
+  }
+}
+
+label {
+  display: block;
+  padding-top: 1em;
+  font-size: 1.5em;
+}
+
+.column1 {
+  padding-left: 10px;
+}

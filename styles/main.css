@@ -1,0 +1,120 @@
+/*******************
+     IMPORTS
+*******************/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/*******************
+      COLORS
+*******************/
+/*******************
+       FONTS
+*******************/
+body {
+  font-family: "Poiret One", cursive;
+  background-color: #47a3da;
+  color: white; }
+
+/*******************
+ RESPONSIVE LAYOUT
+*******************/
+form {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  form::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.column1,
+.column2,
+.column3 {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .column1:last-child,
+  .column2:last-child,
+  .column3:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 501px) and (max-width: 840px) {
+    .column1,
+    .column2,
+    .column3 {
+      float: left;
+      display: block;
+      margin-right: 16.03631%;
+      width: 41.98184%; }
+      .column1:last-child,
+      .column2:last-child,
+      .column3:last-child {
+        margin-right: 0; }
+      .column1:nth-child(2),
+      .column2:nth-child(2),
+      .column3:nth-child(2) {
+        margin-right: 0; } }
+  @media screen and (max-width: 500px) {
+    .column1,
+    .column2,
+    .column3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .column1:last-child,
+      .column2:last-child,
+      .column3:last-child {
+        margin-right: 0; } }
+
+@media screen and (min-width: 501px) and (max-width: 840px) {
+  .column3 {
+    float: left;
+    display: block;
+    margin-right: 16.03631%;
+    width: 680.18156%; }
+    .column3:last-child {
+      margin-right: 0; } }
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: none; }
+
+input,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 10px;
+  color: white;
+  background-color: #47a3da;
+  font-size: 1.25em;
+  font-family: "Poiret One", cursive;
+  border-bottom: 3px solid white; }
+  input:focus,
+  textarea:focus {
+    border-bottom: 5px solid black; }
+
+label {
+  display: block;
+  padding-top: 1em;
+  font-size: 1.5em; }
+
+.column1 {
+  padding-left: 10px; }
+
+/*# sourceMappingURL=main.css.map */
